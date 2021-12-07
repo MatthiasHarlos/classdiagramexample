@@ -4,28 +4,37 @@ import java.util.List;
 
 public class PrivatKunde extends Kunde{
 
-    private String firstName;
-    private String lastName;
+    private String vorname;
+    private String nachname;
+    private Adresse postAdresse;
 
     public PrivatKunde(String firstName, String lastName, List<Konto> konten, List<Adresse> postaddresses) {
         super(konten, postaddresses);
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.vorname = firstName;
+        this.nachname = lastName;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getVorname() {
+        return vorname;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setVorname(String vorname) {
+        this.vorname = vorname;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getNachname() {
+        return nachname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setNachname(String nachname) {
+        this.nachname = nachname;
+    }
+
+    public Adresse getPostAdresse() {
+        return postAdresse;
+    }
+
+    public void setPostAdresse(Adresse postAdresse) {
+        this.postAdresse = postAdresse;
     }
 }

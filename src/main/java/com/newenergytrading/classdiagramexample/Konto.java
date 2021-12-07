@@ -5,17 +5,15 @@ import java.util.List;
 public class Konto {
 
     private String bezeichnung;
-    private List<Kunde> kunden;
+    private List<Kunde> zeichnungsberechtigte;
 
-    public int saldo() {
+    public GeldBetrag saldo() {
         // TODO: Implement this.
-        return 0;
+        return null;
     }
 
-    public int einzahlen(int geldBetrag) {
-        int betrag = 0;
-        betrag = betrag + saldo();
-        return betrag;
+    public void einzahlen(GeldBetrag geldBetrag) {
+       //TODO: Implement this.
     }
 
     public String getBezeichnung() {
@@ -26,11 +24,11 @@ public class Konto {
         this.bezeichnung = bezeichnung;
     }
 
-    public List<Kunde> getKunden() {
-        return kunden;
+    public List<Kunde> getZeichnungsberechtigte() {
+        return zeichnungsberechtigte;
     }
 
-    public void setKunden(List<Kunde> kunden) {
-        this.kunden = kunden;
+    public void setZeichnungsberechtigte(List<Kunde> zeichnungsberechtigte) {
+        this.zeichnungsberechtigte = zeichnungsberechtigte;
     }
 }
